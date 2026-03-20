@@ -7,9 +7,9 @@ import shutil
 import datetime
 
 # ────────────────────────────────────────────────
-#  CONFIG
+#  CONFIGhttps://console.groq.com/keys
 # ────────────────────────────────────────────────
-API_KEY  = "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"
+API_KEY  = "ENTER YOUR API KEY[GROCK](website : https://console.groq.com/keys)"
 MODEL    = "llama-3.3-70b-versatile"
 client   = Groq(api_key=API_KEY)
 
