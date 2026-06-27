@@ -298,14 +298,12 @@ GitHub: https://github.com/sayan08880
 
 LinkedIn: https://linkedin.com/in/sayan-mahalanabish-4278571b6
 
-Portfolio: https://sayan08880.github.io/PORTFOLIO/
-
 ---
 
 <div align="center">
 
 ⭐ If you like this project, don't forget to star the repository.
 
-Made with ❤️ by **Sayan Mahalanabish**
+Made by **Sayan Mahalanabish**
 
 </div>
