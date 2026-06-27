@@ -125,27 +125,18 @@ python chatbot.py
 
 ## Terminal
 
-```md
-![Terminal 1](SCREENSHOTS/terminal1.png)
 
-![Terminal 2](SCREENSHOTS/terminal2.png)
+![Terminal 1](IMAGE/P1.png)
 
-![Terminal 3](SCREENSHOTS/terminal3.png)
-```
+
 
 ---
 
 ## Web Application
 
-```md
-![Home](SCREENSHOTS/web1.png)
 
-![Chat](SCREENSHOTS/web2.png)
+![APP](IMAGE/P2.png)
 
-![Settings](SCREENSHOTS/web3.png)
-
-![Mobile](SCREENSHOTS/mobile.png)
-```
 
 ---
 
