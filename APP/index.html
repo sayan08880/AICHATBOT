@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Chat</title>
+  <link rel="icon" type="image/jpeg" href="logo.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <main class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">AI</div>
+        <div>
+          <h1>Neon Chat</h1>
+          <p>Groq AI Assistant</p>
+        </div>
+      </div>
+
+      <button class="new-chat" id="newChatBtn">+ New Chat</button>
+
+      <div class="chat-list" id="chatList"></div>
+
+      <div class="sidebar-footer">
+        <button id="settingsBtn">⚙ Settings</button>
+        <button id="clearBtn">🗑 Clear</button>
+      </div>
+    </aside>
+
+    <section class="chat-panel">
+      <header class="topbar">
+        <div>
+          <h2 id="chatTitle">New Conversation</h2>
+          <span id="statusBadge">● Ready</span>
+        </div>
+        <button class="mobile-settings" id="settingsBtn2">⚙</button>
+      </header>
+
+      <div class="hero hidden" id="hero">
+        <div class="hero-icon">✦</div>
+        <h2>Ask anything. Build faster.</h2>
+        <p>Enter your Groq API key in settings, select a model, and start chatting.</p>
+        <div class="quick-prompts">
+          <button data-prompt="Explain JavaScript fetch API with example">Explain Fetch API</button>
+          <button data-prompt="Write a professional README for my AI chat project">Make README</button>
+          <button data-prompt="Create a study plan for learning web development">Study Plan</button>
+        </div>
+      </div>
+
+      <div class="messages" id="messages"></div>
+
+      <form class="composer" id="chatForm">
+        <textarea id="prompt" rows="1" placeholder="Type your message..."></textarea>
+        <button type="submit" id="sendBtn">➤</button>
+      </form>
+    </section>
+  </main>
+
+  <div class="modal hidden" id="settingsModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2>Settings</h2>
+        <button id="closeSettings">×</button>
+      </div>
+
+      <label>Groq API Key</label>
+      <div class="key-row">
+        <input id="apiKey" type="password" placeholder="gsk_..." />
+        <button id="toggleKey">Show</button>
+      </div>
+
+      <label>Model</label>
+      <select id="model">
+        <option value="llama-3.3-70b-versatile">llama-3.3-70b-versatile</option>
+        <option value="llama-3.1-8b-instant">llama-3.1-8b-instant</option>
+        <option value="gemma2-9b-it">gemma2-9b-it</option>
+        <option value="openai/gpt-oss-20b">openai/gpt-oss-20b</option>
+      </select>
+
+      <label>System Prompt</label>
+      <textarea id="systemPrompt" rows="4">You are a helpful, knowledgeable, and concise assistant.</textarea><br><br>
+
+      <button class="save-btn" id="saveSettings">Save Settings</button>
+
+      <p class="warning">
+        DEVELOPING BY SAYAN
+      </p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
